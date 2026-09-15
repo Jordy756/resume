@@ -49,9 +49,9 @@ const heroLinks = [
     </div>
     <ul class="flex items-center justify-center gap-2 md:justify-start">
       {heroLinks.map(({ href, icon: Icon, ariaLabel }) => (
-        <li class="rounded-sm border p-1">
+        <li class="rounded-sm border p-1.25">
           <Link href={href} aria-label={ariaLabel} title={ariaLabel} target="_blank" rel="noopener noreferrer">
-            <Icon width={20} height={20} class="size-5 transition-[color] hover:text-neutral-900" />
+            <Icon width={20} height={20} class="size-4 transition-[color] hover:text-neutral-900" />
           </Link>
         </li>
       ))}

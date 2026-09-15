@@ -6,9 +6,6 @@ import { getCurrentLocale, useResume, useTranslations } from '@i18n/utils';
 const currentLocale = getCurrentLocale(Astro.currentLocale);
 const t = useTranslations(currentLocale);
 const { education } = useResume(currentLocale);
-
-const localeCode = currentLocale === 'es' ? 'es-ES' : 'en-US';
-const presentText = t('labels.present');
 ---
 
 <Section title={t('sections.education.title')}>
@@ -19,7 +16,7 @@ const presentText = t('labels.present');
           <div class="flex flex-col">
             <h3 class="text-lg">{institution}</h3>
           </div>
-          <TimePeriod startDate={startDate} endDate={endDate} localeCode={localeCode} presentText={presentText} />
+          <TimePeriod startDate={startDate} endDate={endDate} />
         </header>
       </header>
       <div>

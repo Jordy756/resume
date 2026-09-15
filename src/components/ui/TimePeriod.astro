@@ -1,23 +1,27 @@
 ---
+import { getCurrentLocale, useTranslations } from '@i18n/utils';
 import { getFormattedDate } from '@scripts/utils/handleDates';
 
 interface Props {
   startDate: string;
   endDate: string | null;
-  localeCode: 'en-US' | 'es-ES';
-  presentText: string;
   class?: string;
 }
 
-const { startDate, endDate, localeCode, presentText, class: className } = Astro.props;
+const { startDate, endDate, class: className } = Astro.props;
+const currentLocale = getCurrentLocale(Astro.currentLocale);
+const t = useTranslations(currentLocale);
 
+const localeCode = currentLocale === 'es' ? 'es-ES' : 'en-US';
 const formattedStartDate = getFormattedDate(new Date(startDate), localeCode, {
   year: 'numeric',
 });
-const formattedEndDate = getFormattedDate(new Date(startDate), localeCode, { year: 'numeric' }, presentText);
+const formattedEndDate = endDate
+  ? getFormattedDate(new Date(endDate), localeCode, { year: 'numeric' })
+  : t('labels.present');
 ---
 
-<div class:list={['text-right text-neutral-500', className]}>
+<div class:list={['text-right text-neutral-500 gap-0.5 flex', className]}>
   <time datetime={startDate + ''}>{formattedStartDate}</time>
   <span>-</span>
   <time datetime={endDate + ''}>{formattedEndDate}</time>
