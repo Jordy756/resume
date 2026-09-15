@@ -1,0 +1,28 @@
+---
+import AboutMe from '@components/sections/AboutMe.astro';
+import Certificates from '@components/sections/certificates/Certificates.astro';
+import Education from '@components/sections/Education.astro';
+import Experience from '@components/sections/Experience.astro';
+import Hero from '@components/sections/Hero.astro';
+import Projects from '@components/sections/Projects.astro';
+import Skills from '@components/sections/Skills.astro';
+import { getCurrentLocale, locales, useResume, useTranslations } from '@i18n/utils';
+import Layout from '@layouts/Layout.astro';
+
+export const getStaticPaths = () => locales.map((locale) => ({ params: { locale } }));
+
+const currentLocale = getCurrentLocale(Astro.currentLocale);
+const t = useTranslations(currentLocale);
+---
+
+<Layout title={t('home.meta.title')} description={t('home.meta.description')}>
+  <Hero />
+  <main class="flex flex-col gap-8">
+    <AboutMe />
+    <Experience />
+    <Projects />
+    <Education />
+    <Certificates />
+    <Skills />
+  </main>
+</Layout>

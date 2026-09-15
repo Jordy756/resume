@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+@theme {
+  --max-width: 700px;
+
+  --font-sans: var(--font-nunito-sans);
+  --font-mono: var(--font-nunito-sans);
+}
+
+@layer base {
+  :root {
+    interpolate-size: allow-keywords;
+  }
+
+  :is(h1, h2, h3, h4, h5, h6) {
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-neutral-950);
+    text-wrap: balance;
+  }
+
+  :is(button, a) {
+    cursor: pointer;
+  }
+
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-neutral-200);
+  }
+}
+
+@utility w-page {
+  width: min(100%, var(--max-width));
+}

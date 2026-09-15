@@ -1,0 +1,12 @@
+---
+import Section from '@components/chrome/Section.astro';
+import { getCurrentLocale, useResume, useTranslations } from '@i18n/utils';
+
+const currentLocale = getCurrentLocale(Astro.currentLocale);
+const t = useTranslations(currentLocale);
+const { basics } = useResume(currentLocale);
+---
+
+<Section title={t('sections.aboutMe.title')}>
+  <p>{basics.summary}</p>
+</Section>
