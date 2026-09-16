@@ -12,7 +12,7 @@ const { certificates } = useResume(currentLocale);
 const groups = Object.entries(certificates).sort(([a], [b]) => Number(b) - Number(a));
 ---
 
-<Section title={t('sections.certificates.title')}>
+<Section title={t('certificates.title')}>
   <div class="flex flex-col gap-8">
     {groups.map(([year, items]) => (
       <div class="flex flex-col gap-2">
@@ -20,7 +20,7 @@ const groups = Object.entries(certificates).sort(([a], [b]) => Number(b) - Numbe
         <ul class="ml-4 flex flex-col gap-4">
           {items.map(({ name, url, issuer, date }) => {
             const formattedDate = getFormattedDate(date, currentLocale, { month: 'short' });
-            const ariaLabel = t('aria.certificate', { name, issuer });
+            const ariaLabel = t('certificates.certificate.aria', { name, issuer });
             return (
               <li class="relative gap-y-1 pl-4 before:absolute before:top-0 before:left-0 before:h-[calc(100%+16px)] before:w-px before:bg-neutral-200 after:absolute after:top-1/2 after:left-0 after:h-px after:w-3 after:bg-neutral-200 last:before:h-1/2">
                 <article class="grid grid-cols-[30px_1fr] grid-rows-[auto_1fr] gap-x-4">

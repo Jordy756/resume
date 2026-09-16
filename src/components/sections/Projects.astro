@@ -9,7 +9,7 @@ const t = useTranslations(currentLocale);
 const { projects } = useResume(currentLocale);
 ---
 
-<Section title={t('sections.projects.title')} class="print:hidden">
+<Section title={t('projects.title')} class="print:hidden">
   <div class="grid grid-cols-[repeat(auto-fit,minmax(225px,1fr))] gap-4">
     {projects.map(({ name, description, url, github }) => (
       <article class="flex flex-col gap-2 rounded-sm border p-4">
@@ -26,9 +26,9 @@ const { projects } = useResume(currentLocale);
         <footer class="flex items-center gap-2 mt-2 justify">
           {url && (
             <Link
-              class="border px-2 py-1 border-neutral-800 justify-between rounded-xs bg-neutral-800 text-neutral-50"
+              class="border px-2 py-1 border-neutral-700 justify-between rounded-xs bg-neutral-700 text-neutral-50"
               href={url}
-              aria-label={t('aria.project.demo', { name })}
+              aria-label={t('projects.demo.aria', { name })}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -39,7 +39,7 @@ const { projects } = useResume(currentLocale);
             <Link
               class="border px-2 py-1 justify-between rounded-xs"
               href={github}
-              aria-label={t('aria.project.repo', { name })}
+              aria-label={t('projects.repo.aria', { name })}
               target="_blank"
               rel="noopener noreferrer"
             >

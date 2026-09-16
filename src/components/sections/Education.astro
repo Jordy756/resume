@@ -1,5 +1,7 @@
 ---
 import Section from '@components/chrome/Section.astro';
+import ExternalIcon from '@components/icons/ExternalIcon.astro';
+import Link from '@components/ui/Link.astro';
 import TimePeriod from '@components/ui/TimePeriod.astro';
 import { getCurrentLocale, useResume, useTranslations } from '@i18n/utils';
 
@@ -8,7 +10,7 @@ const t = useTranslations(currentLocale);
 const { education } = useResume(currentLocale);
 ---
 
-<Section title={t('sections.education.title')}>
+<Section title={t('education.title')}>
   {education.map(({ institution, area, startDate, endDate }) => (
     <article>
       <header>
@@ -19,8 +21,11 @@ const { education } = useResume(currentLocale);
           <TimePeriod startDate={startDate} endDate={endDate} />
         </header>
       </header>
-      <div>
+      <div class="flex gap-2 items-center justify-between">
         <p>{area}</p>
+        <Link class="print:flex hidden" href={''} target="_blank" rel="noopener noreferrer">
+          <ExternalIcon width={12} height={12} class="size-3 transition-[color] hover:text-neutral-900" />
+        </Link>
       </div>
     </article>
   ))}

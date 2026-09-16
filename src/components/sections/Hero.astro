@@ -18,27 +18,27 @@ const heroLinks = [
   {
     href: 'https://jordy-castro-portafolio.vercel.app/',
     icon: PortfolioIcon,
-    ariaLabel: t('aria.hero.portfolio', { name }),
+    ariaLabel: t('hero.portfolio.aria', { name }),
   },
   {
     href: `mailto:${email}`,
     icon: EmailIcon,
-    ariaLabel: t('aria.hero.email', { name }),
+    ariaLabel: t('hero.email.aria', { name }),
   },
   {
     href: 'https://linkedin.com/in/yordicastro',
     icon: LinkedInIcon,
-    ariaLabel: t('aria.hero.network', { name, network: 'LinkedIn' }),
+    ariaLabel: t('hero.network.aria', { name, network: 'LinkedIn' }),
   },
   {
     href: 'https://github.com/Jordy756',
     icon: GithubIcon,
-    ariaLabel: t('aria.hero.network', { name, network: 'GitHub' }),
+    ariaLabel: t('hero.network.aria', { name, network: 'GitHub' }),
   },
   {
     href: `/docs/Yordi_Castro_CV_${currentLocale.toUpperCase()}.pdf`,
     icon: ResumeIcon,
-    ariaLabel: t('aria.hero.resume', { name }),
+    ariaLabel: t('hero.resume.aria', { name }),
   },
 ];
 ---
@@ -66,7 +66,7 @@ const heroLinks = [
   <figure class="flex min-w-35">
     <Image
       src="/images/me.webp"
-      alt={t('sections.hero.imageAlt')}
+      alt={t('hero.imageAlt')}
       class="aspect-auto h-62.5 w-auto rounded-sm object-cover md:max-h-43.5 md:flex-1"
       width={140}
       height={174}

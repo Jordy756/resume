@@ -8,7 +8,7 @@ const t = useTranslations(currentLocale);
 const { experience } = useResume(currentLocale);
 ---
 
-<Section title={t('sections.experience.title')}>
+<Section title={t('experience.title')}>
   <div class="flex flex-col gap-4">
     {experience.map(({ name, position, startDate, endDate, highlights }) => (
       <article class="flex flex-col gap-3">

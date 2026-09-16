@@ -3,51 +3,46 @@ import es from '@data/es.json';
 
 const sections = {
   en: {
-    'sections.hero.imageAlt':
+    'hero.imageAlt':
       'Black and white portrait of Yordi Castro Rojas posing in a dark overcoat against a wall with geometric shadows from natural light.',
-    'sections.aboutMe.title': 'About me',
-    'sections.experience.title': 'Experience',
-    'sections.projects.title': 'Projects',
-    'sections.education.title': 'Education',
-    'sections.certificates.title': 'Certificates',
-    'sections.skills.title': 'Skills',
+    'hero.portfolio.aria': "View {{name}}'s portfolio",
+    'hero.email.aria': 'Send an email to {{name}}',
+    'hero.network.aria': "View {{name}}'s {{network}} profile",
+    'hero.resume.aria': "Download {{name}}'s resume in PDF",
+    'aboutMe.title': 'About me',
+    'experience.title': 'Experience',
+    'projects.title': 'Projects',
+    'projects.demo.aria': 'View {{name}} live demo in a new tab',
+    'projects.repo.aria': 'View {{name}} repository on GitHub in a new tab',
+    'education.title': 'Education',
+    'certificates.title': 'Certificates',
+    'certificates.certificate.aria': 'View {{name}} certificate issued by {{issuer}}',
+    'skills.title': 'Skills',
   },
   es: {
-    'sections.hero.imageAlt':
+    'hero.imageAlt':
       'Retrato en blanco y negro de Yordi Castro Rojas posando con un abrigo oscuro frente a una pared con sombras geométricas de luz natural.',
-    'sections.aboutMe.title': 'Sobre mí',
-    'sections.experience.title': 'Experiencia',
-    'sections.projects.title': 'Proyectos',
-    'sections.education.title': 'Educación',
-    'sections.certificates.title': 'Certificados',
-    'sections.skills.title': 'Habilidades',
-  },
-} as const;
-
-const actions = {
-  en: {
-    'actions.viewProject': 'View project',
-    'actions.viewRepo': 'View repository',
-    'actions.viewCertificate': 'View certificate',
-    'actions.downloadResume': 'Download resume',
-    'actions.back': 'Go back',
-  },
-  es: {
-    'actions.viewProject': 'Ver proyecto',
-    'actions.viewRepo': 'Ver repositorio',
-    'actions.viewCertificate': 'Ver certificado',
-    'actions.downloadResume': 'Descargar CV',
-    'actions.back': 'Volver',
+    'hero.portfolio.aria': 'Ver el portafolio de {{name}}',
+    'hero.email.aria': 'Enviar un correo electrónico a {{name}}',
+    'hero.network.aria': 'Ver el perfil de {{name}} en {{network}}',
+    'hero.resume.aria': 'Descargar el currículum de {{name}} en PDF',
+    'aboutMe.title': 'Sobre mí',
+    'experience.title': 'Experiencia',
+    'projects.title': 'Proyectos',
+    'projects.demo.aria': 'Ver demo en vivo del proyecto {{name}} en una nueva pestaña',
+    'projects.repo.aria': 'Ver repositorio de {{name}} en GitHub en una nueva pestaña',
+    'education.title': 'Educación',
+    'certificates.title': 'Certificados',
+    'certificates.certificate.aria': 'Ver el certificado de {{name}} emitido por {{issuer}}',
+    'skills.title': 'Habilidades',
   },
 } as const;
 
 const labels = {
   en: {
-    'labels.issuer': 'Issuer',
     'labels.present': 'Present',
   },
   es: {
-    'labels.issuer': 'Emisor',
     'labels.present': 'Actualidad',
   },
 } as const;
@@ -82,47 +77,18 @@ const notFound = {
   },
 } as const;
 
-const aria = {
-  en: {
-    'aria.hero.portfolio': "View {{name}}'s portfolio",
-    'aria.hero.email': 'Send an email to {{name}}',
-    'aria.hero.network': "View {{name}}'s {{network}} profile",
-    'aria.hero.resume': "Download {{name}}'s resume in PDF",
-    'aria.project.demo': 'View {{name}} live demo in a new tab',
-    'aria.project.repo': 'View {{name}} repository on GitHub in a new tab',
-    'aria.certificate': 'View {{name}} certificate issued by {{issuer}}',
-    'aria.home': "Go to {{name}}'s portfolio home",
-  },
-  es: {
-    'aria.hero.portfolio': "Ver el portafolio de {{name}}",
-    'aria.hero.email': 'Enviar un correo electrónico a {{name}}',
-    'aria.hero.network': 'Ver el perfil de {{name}} en {{network}}',
-    'aria.hero.resume': 'Descargar el currículum de {{name}} en PDF',
-    'aria.project.demo': 'Ver demo en vivo del proyecto {{name}} en una nueva pestaña',
-    'aria.project.repo': 'Ver repositorio de {{name}} en GitHub en una nueva pestaña',
-    'aria.certificate': 'Ver el certificado de {{name}} emitido por {{issuer}}',
-    'aria.socialProfile': 'Visitar mi perfil de {{network}}',
-    'aria.home': 'Ir al inicio del portafolio de {{name}}',
-    'aria.notFound': 'Página no encontrada',
-  },
-} as const;
-
 export const ui = {
   en: {
     ...sections.en,
-    ...home.en,
-    ...actions.en,
     ...labels.en,
+    ...home.en,
     ...notFound.en,
-    ...aria.en,
   },
   es: {
     ...sections.es,
-    ...home.es,
-    ...actions.es,
     ...labels.es,
+    ...home.es,
     ...notFound.es,
-    ...aria.es,
   },
 } as const;
 
