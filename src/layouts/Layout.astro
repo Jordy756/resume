@@ -2,7 +2,7 @@
 import '@styles/global.css';
 import { Font } from 'astro:assets';
 import { getRelativeLocaleUrl } from 'astro:i18n';
-import { getCurrentLocale, locales, useTranslations } from '@i18n/utils';
+import { getCurrentLocale, locales, useResume, useTranslations } from '@i18n/utils';
 
 interface Props {
   title: string;
@@ -13,6 +13,8 @@ const { title, description } = Astro.props;
 
 const currentLocale = getCurrentLocale(Astro.currentLocale);
 const t = useTranslations(currentLocale);
+const { basics } = useResume(currentLocale);
+const { name } = basics;
 
 const url = Astro.url;
 const ogImage =
@@ -41,10 +43,10 @@ const alternateUrl = (locale: string) => new URL(getRelativeLocaleUrl(locale), A
     <meta name="description" content={description} />
 
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content={t('meta.name')} />
+    <meta property="og:site_name" content={t('meta.name', { name })} />
     <meta property="og:url" content={url} />
-    <meta property="og:title" content={t('meta.title')} />
-    <meta property="og:description" content={t('meta.description')} />
+    <meta property="og:title" content={t('meta.title', { name })} />
+    <meta property="og:description" content={t('meta.description', { name })} />
     <meta property="og:image" content={ogImage} />
     <meta property="og:image:width" content="760" />
     <meta property="og:image:height" content="430" />
@@ -52,8 +54,8 @@ const alternateUrl = (locale: string) => new URL(getRelativeLocaleUrl(locale), A
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content={url} />
-    <meta name="twitter:title" content={t('meta.title')} />
-    <meta name="twitter:description" content={t('meta.description')} />
+    <meta name="twitter:title" content={t('meta.title', { name })} />
+    <meta name="twitter:description" content={t('meta.description', { name })} />
     <meta name="twitter:image" content={ogImage} />
 
     <script src="../scripts/config/lenis.ts"></script>
