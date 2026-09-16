@@ -67,11 +67,13 @@ const labels = {
 const home = {
   en: {
     'home.meta.title': 'Yordi Castro Rojas | Full Stack Developer Portfolio',
-    'home.meta.description': 'Full Stack Developer Portfolio by Yordi Castro Rojas',
+    'home.meta.description':
+      "Explore Yordi Castro Rojas' portfolio as a Full Stack Developer. View projects, experience, certifications, and skills on a single, focused page.",
   },
   es: {
     'home.meta.title': 'Yordi Castro Rojas | Portafolio de Desarrollador Full Stack',
-    'home.meta.description': 'Portafolio de Desarrollador Full Stack de Yordi Castro Rojas',
+    'home.meta.description':
+      'Explorá el portafolio de Yordi Castro Rojas, Desarrollador Full Stack. Conocé sus proyectos, experiencia, certificaciones y habilidades en una sola página.',
   },
 } as const;
 
