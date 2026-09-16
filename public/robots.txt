@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jordy-castro-resume.vercel.app/sitemap-index.xml

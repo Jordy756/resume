@@ -24,17 +24,6 @@ const sections = {
   },
 } as const;
 
-const home = {
-  en: {
-    'home.meta.title': 'Yordi Castro Rojas | Full Stack Developer Portfolio',
-    'home.meta.description': 'Full Stack Developer Portfolio by Yordi Castro Rojas',
-  },
-  es: {
-    'home.meta.title': 'Yordi Castro Rojas | Portafolio de Desarrollador Full Stack',
-    'home.meta.description': 'Portafolio de Desarrollador Full Stack de Yordi Castro Rojas',
-  },
-} as const;
-
 const actions = {
   en: {
     'actions.viewProject': 'View project',
@@ -63,6 +52,17 @@ const labels = {
   },
 } as const;
 
+const home = {
+  en: {
+    'home.meta.title': 'Yordi Castro Rojas | Full Stack Developer Portfolio',
+    'home.meta.description': 'Full Stack Developer Portfolio by Yordi Castro Rojas',
+  },
+  es: {
+    'home.meta.title': 'Yordi Castro Rojas | Portafolio de Desarrollador Full Stack',
+    'home.meta.description': 'Portafolio de Desarrollador Full Stack de Yordi Castro Rojas',
+  },
+} as const;
+
 const notFound = {
   en: {
     'notFound.title': '404 — Not Found',
@@ -84,6 +84,7 @@ const notFound = {
 
 const aria = {
   en: {
+    'aria.hero.portfolio': "View {{name}}'s portfolio",
     'aria.hero.email': 'Send an email to {{name}}',
     'aria.hero.network': "View {{name}}'s {{network}} profile",
     'aria.hero.resume': "Download {{name}}'s resume in PDF",
@@ -93,6 +94,7 @@ const aria = {
     'aria.home': "Go to {{name}}'s portfolio home",
   },
   es: {
+    'aria.hero.portfolio': "Ver el portafolio de {{name}}",
     'aria.hero.email': 'Enviar un correo electrónico a {{name}}',
     'aria.hero.network': 'Ver el perfil de {{name}} en {{network}}',
     'aria.hero.resume': 'Descargar el currículum de {{name}} en PDF',

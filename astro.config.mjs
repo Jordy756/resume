@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://jordy756-minimalist-portfolio.vercel.app',
+  site: 'https://jordy-castro-resume.vercel.app/',
 
   integrations: [sitemap()],
 

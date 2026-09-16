@@ -2,6 +2,7 @@
 import EmailIcon from '@components/icons/EmailIcon.astro';
 import GithubIcon from '@components/icons/GithubIcon.astro';
 import LinkedInIcon from '@components/icons/LinkedInIcon.astro';
+import PortfolioIcon from '@components/icons/PortfolioIcon.astro';
 import ResumeIcon from '@components/icons/ResumeIcon.astro';
 import WorldIcon from '@components/icons/WorldIcon.astro';
 import Link from '@components/ui/Link.astro';
@@ -14,6 +15,11 @@ const { basics } = useResume(currentLocale);
 const { name, label, email, location } = basics;
 
 const heroLinks = [
+  {
+    href: 'https://jordy-castro-portafolio.vercel.app/',
+    icon: PortfolioIcon,
+    ariaLabel: t('aria.hero.portfolio', { name }),
+  },
   {
     href: `mailto:${email}`,
     icon: EmailIcon,
