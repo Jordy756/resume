@@ -12,12 +12,11 @@ const { startDate, endDate, class: className } = Astro.props;
 const currentLocale = getCurrentLocale(Astro.currentLocale);
 const t = useTranslations(currentLocale);
 
-const localeCode = currentLocale === 'es' ? 'es-ES' : 'en-US';
-const formattedStartDate = getFormattedDate(new Date(startDate), localeCode, {
+const formattedStartDate = getFormattedDate(new Date(startDate), currentLocale, {
   year: 'numeric',
 });
 const formattedEndDate = endDate
-  ? getFormattedDate(new Date(endDate), localeCode, { year: 'numeric' })
+  ? getFormattedDate(new Date(endDate), currentLocale, { year: 'numeric' })
   : t('labels.present');
 ---
 

@@ -6,12 +6,11 @@ interface Props extends HTMLAttributes<'svg'> {}
 const { ...props } = Astro.props;
 ---
 
-<svg viewBox="0 0 21 21" {...props} aria-hidden="true">
+<svg viewBox="0 0 24 24" fill="none" aria-hidden="true" {...props}>
   <path
-    fill="none"
-    stroke="currentColor"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    d="M18.5 8.5v-5h-5m5 0l-7 7m-1-7h-5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-4"
-  ></path>
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M20.3333 22C21.2533 22 22 21.2533 22 20.3333V12.6667H24V20.3333C23.9982 21.3053 23.6114 22.2369 22.9241 22.9241C22.2369 23.6114 21.3053 23.9982 20.3333 24H3.66667C2.69475 23.9982 1.76314 23.6114 1.07589 22.9241C0.388637 22.2369 0.00176232 21.3053 0 20.3333V3.66667C0.00176232 2.69475 0.388637 1.76314 1.07589 1.07589C1.76314 0.388637 2.69475 0.00176232 3.66667 0H11.3333V2H3.66667C2.74667 2 2 2.74667 2 3.66667V20.3333C2 21.2533 2.74667 22 3.66667 22H20.3333ZM14 0H22.3333C23.2533 0 24 0.746667 24 1.66667V10H22V3.45333L11.3933 14.6867L9.94 13.3133L20.62 2H14V0Z"
+    fill="black"
+  />
 </svg>

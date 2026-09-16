@@ -1,12 +1,12 @@
 ---
 import AboutMe from '@components/sections/AboutMe.astro';
-import Certificates from '@components/sections/certificates/Certificates.astro';
+import Certificates from '@components/sections/Certificates.astro';
 import Education from '@components/sections/Education.astro';
 import Experience from '@components/sections/Experience.astro';
 import Hero from '@components/sections/Hero.astro';
 import Projects from '@components/sections/Projects.astro';
 import Skills from '@components/sections/Skills.astro';
-import { getCurrentLocale, locales, useResume, useTranslations } from '@i18n/utils';
+import { getCurrentLocale, locales, useTranslations } from '@i18n/utils';
 import Layout from '@layouts/Layout.astro';
 
 export const getStaticPaths = () => locales.map((locale) => ({ params: { locale } }));

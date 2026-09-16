@@ -199,7 +199,7 @@
       "description": "Website for a dairy products company.",
       "stack": ["Astro", "TypeScript", "CSS", "Figma"],
       "url": "https://lacteos-el-torito.vercel.app/",
-      "github": "https://github.com/Jordy1756/el-torito-dairy-products"
+      "github": null
     },
     {
       "name": "Silk Tree",
