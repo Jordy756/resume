@@ -60,8 +60,8 @@ const alternateUrl = (locale: string) => new URL(getRelativeLocaleUrl(locale), A
 
     <script src="../scripts/config/lenis.ts"></script>
   </head>
-  <body class="bg-neutral-50 text-sm text-pretty text-neutral-700 min-h-dvh overflow-x-clip print:bg-white">
-    <div class="mx-auto flex w-page flex-col gap-8 p-4 md:py-12">
+  <body class="bg-neutral-50 text-sm text-pretty text-neutral-700 overflow-x-clip print:bg-white">
+    <div class="mx-auto flex min-h-dvh w-page flex-col gap-8 p-4 md:py-12">
       <slot />
     </div>
   </body>
