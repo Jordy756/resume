@@ -1,6 +1,23 @@
 import en from '@data/en.json';
 import es from '@data/es.json';
 
+const meta = {
+  en: {
+    'meta.name': 'Yordi Castro',
+    'meta.title': 'Yordi Castro | Full Stack Developer Portfolio',
+    'meta.description':
+      'Full Stack Developer Portfolio by Yordi Castro. Explore experience, projects, certifications, and skills in a single page.',
+    'meta.locale': 'en_US',
+  },
+  es: {
+    'meta.name': 'Yordi Castro',
+    'meta.title': 'Yordi Castro | Portafolio de Desarrollador Full Stack',
+    'meta.description':
+      'Portafolio de Desarrollador Full Stack de Yordi Castro. Explorá experiencia, proyectos, certificaciones y habilidades en una sola página.',
+    'meta.locale': 'es_ES',
+  },
+} as const;
+
 const sections = {
   en: {
     'hero.imageAlt':
@@ -79,12 +96,14 @@ const notFound = {
 
 export const ui = {
   en: {
+    ...meta.en,
     ...sections.en,
     ...labels.en,
     ...home.en,
     ...notFound.en,
   },
   es: {
+    ...meta.es,
     ...sections.es,
     ...labels.es,
     ...home.es,
