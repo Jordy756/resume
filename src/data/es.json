@@ -12,6 +12,20 @@
   },
   "experience": [
     {
+      "name": "Grupo Monge",
+      "position": "Desarrollador Full Stack",
+      "startDate": "2026-05-05",
+      "endDate": null,
+      "highlights": [
+        "Diseñé y desarrollé soluciones full stack para procesos financieros, contables, logísticos y de servicio al cliente, transformando requerimientos de negocio en funcionalidades mantenibles y orientadas a resultados.",
+        "Implementé un proceso de reconocimiento y diferimiento de comisiones mediante tablas de amortización, parámetros configurables y reglas para refinanciamientos, pagos anticipados, ventas de cartera e incobrables.",
+        "Desarrollé integraciones y validaciones para la conciliación de pagos digitales, automatizando la identificación de referencias bancarias, datos de clientes y registros contables en diferentes monedas.",
+        "Desarrollé funcionalidades para la gestión integral de guías de transporte: selección y validación de tickets, escaneo de códigos de barras, confirmación de despacho, recepción, control de estados y generación de reportes de inconsistencias.",
+        "Diseñé estructuras y procesos de carga para un Data Warehouse financiero, incluyendo información histórica, actualizaciones automáticas y fuentes para análisis de margen, recuperación, colocación y operaciones crediticias.",
+        "Participé en la migración de un servicio de gestión de tickets a .NET 10, contribuyendo a la modernización de la plataforma, la mantenibilidad del código y la continuidad operativa."
+      ]
+    },
+    {
       "name": "4Geeks",
       "position": "Desarrollador Full Stack",
       "startDate": "2025-07-01",

@@ -12,6 +12,20 @@
   },
   "experience": [
     {
+      "name": "Grupo Monge",
+      "position": "Full Stack Developer",
+      "startDate": "2026-05-05",
+      "endDate": null,
+      "highlights": [
+        "Designed and developed full-stack solutions for financial, accounting, logistics, and customer service processes, translating business requirements into maintainable, outcome-oriented features.",
+        "Implemented a commission recognition and deferral process using amortization schedules, configurable parameters, and business rules for refinancing, early payments, portfolio sales, and uncollectible accounts.",
+        "Developed integrations and validations for digital payment reconciliation, automating the identification of bank references, customer data, and accounting records across multiple currencies.",
+        "Developed end-to-end transport guide management features, including ticket selection and validation, barcode scanning, dispatch confirmation, receipt workflows, status control, and inconsistency reporting.",
+        "Designed data structures and loading processes for a financial data warehouse, including historical data, automated updates, and sources for margin, recovery, loan origination, and credit operations analysis.",
+        "Contributed to migrating a ticket management service to .NET 10, supporting platform modernization, code maintainability, and operational continuity."
+      ]
+    },
+    {
       "name": "4Geeks",
       "position": "Full Stack Developer",
       "startDate": "2025-07-01",
