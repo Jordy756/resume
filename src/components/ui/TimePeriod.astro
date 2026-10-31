@@ -13,15 +13,16 @@ const currentLocale = getCurrentLocale(Astro.currentLocale);
 const t = useTranslations(currentLocale);
 
 const formattedStartDate = getFormattedDate(new Date(startDate), currentLocale, {
+  month: 'short',
   year: 'numeric',
 });
 const formattedEndDate = endDate
-  ? getFormattedDate(new Date(endDate), currentLocale, { year: 'numeric' })
+  ? getFormattedDate(new Date(endDate), currentLocale, { month: 'short', year: 'numeric' })
   : t('labels.present');
 ---
 
-<div class:list={['text-right text-neutral-500 gap-0.5 flex', className]}>
-  <time datetime={startDate + ''}>{formattedStartDate}</time>
+<div class:list={['text-center justify-end items-center text-neutral-500 gap-0.5 flex capitalize', className]}>
+  <time datetime={startDate}>{formattedStartDate}</time>
   <span>-</span>
-  <time datetime={endDate + ''}>{formattedEndDate}</time>
+  {endDate ? <time datetime={endDate}>{formattedEndDate}</time> : <span>{formattedEndDate}</span>}
 </div>

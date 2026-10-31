@@ -12,17 +12,15 @@
   },
   "experience": [
     {
-      "name": "Grupo Monge",
-      "position": "Desarrollador Full Stack",
+      "name": "Factor K",
+      "position": "Desarrollador Full Stack para Grupo Monge",
       "startDate": "2026-05-05",
       "endDate": null,
       "highlights": [
-        "Diseñé y desarrollé soluciones full stack para procesos financieros, contables, logísticos y de servicio al cliente, transformando requerimientos de negocio en funcionalidades mantenibles y orientadas a resultados.",
-        "Implementé un proceso de reconocimiento y diferimiento de comisiones mediante tablas de amortización, parámetros configurables y reglas para refinanciamientos, pagos anticipados, ventas de cartera e incobrables.",
-        "Desarrollé integraciones y validaciones para la conciliación de pagos digitales, automatizando la identificación de referencias bancarias, datos de clientes y registros contables en diferentes monedas.",
-        "Desarrollé funcionalidades para la gestión integral de guías de transporte: selección y validación de tickets, escaneo de códigos de barras, confirmación de despacho, recepción, control de estados y generación de reportes de inconsistencias.",
-        "Diseñé estructuras y procesos de carga para un Data Warehouse financiero, incluyendo información histórica, actualizaciones automáticas y fuentes para análisis de margen, recuperación, colocación y operaciones crediticias.",
-        "Participé en la migración de un servicio de gestión de tickets a .NET 10, contribuyendo a la modernización de la plataforma, la mantenibilidad del código y la continuidad operativa."
+        "Desarrollé en .NET el motor de reconocimiento y diferimiento de comisiones, con tablas de amortización y parámetros configurables para refinanciamientos, pagos anticipados, ventas de cartera e incobrables.",
+        "Implementé en .NET la conciliación de pagos digitales, automatizando el cruce de referencias bancarias, datos de clientes y registros contables en múltiples monedas.",
+        "Construí en Blazor y .NET 10 la gestión de guías de transporte, con validación de tickets, escaneo de códigos de barras, control de estados y reportes de inconsistencias.",
+        "Diseñé e implementé en SQL Server los procesos ETL de carga mensual del Data Warehouse, con información histórica y actualizaciones automáticas para el análisis de margen, recuperación y colocación."
       ]
     },
     {
@@ -31,22 +29,19 @@
       "startDate": "2025-07-01",
       "endDate": "2025-12-01",
       "highlights": [
-        "Lideré el desarrollo integral de la primera aplicación móvil oficial (Flutter) desde cero, expandiendo el alcance digital de la empresa al migrar los servicios web a una experiencia móvil de alto rendimiento.",
-        "Lideré la refactorización y el rediseño de UI/UX de MARKET-APP (Electron + React), transformando un proyecto inicial en una solución de autoservicio funcional, accesible y lista para producción con soporte i18n.",
-        "Desarrollé un sistema de mensajería en tiempo real (Angular + Firebase), incrementando la eficiencia en la comunicación entre candidatos y reclutadores mediante notificaciones instantáneas y gestión de chats.",
-        "Refactoricé middlewares de backend en Python para integrar un nuevo sistema de autenticación por API Key, reforzando la seguridad y permitiendo la validación concurrente de tokens OAuth y JWT."
+        "Desarrollé desde cero la primera aplicación móvil de la empresa en Flutter, migrando los servicios web existentes a una experiencia móvil multiplataforma.",
+        "Rediseñé MARKET-APP en Electron y React, convirtiendo un prototipo inicial en una herramienta de autoservicio lista para producción con soporte i18n.",
+        "Implementé un sistema de mensajería en tiempo real con Angular y Firebase, con notificaciones instantáneas y gestión de chats entre candidatos y reclutadores.",
+        "Refactoricé middlewares de backend en Python para integrar autenticación por API Key, habilitando la validación concurrente de tokens OAuth y JWT."
       ]
     },
     {
       "name": "Lácteos El Torito",
-      "position": "Diseñador Web y Desarrollador",
+      "position": "Freelancer Web Developer",
       "startDate": "2024-01-16",
       "endDate": "2024-03-01",
       "highlights": [
-        "Gestioné el ciclo de vida completo (SDLC) para la primera plataforma web de la empresa, logrando un incremento del 100% en el alcance digital y una presencia de marca profesionalizada.",
-        "Desarrollé y lancé un sitio web de alto rendimiento utilizando Astro, alcanzando puntuaciones casi perfectas en Google Lighthouse (95+) en rendimiento, SEO y accesibilidad.",
-        "Habilité la comunicación omnicanal mediante la integración de formularios automatizados, correo directo y WhatsApp, agilizando el proceso de adquisición de clientes.",
-        "Diseñé un sistema de identidad visual completo desde cero, garantizando una consistencia del 100% en todos los puntos de contacto digitales y dispositivos móviles."
+        "Creé la primera plataforma web de la empresa con Astro, Tailwind CSS y Figma, alcanzando 95+ en Google Lighthouse en rendimiento, SEO y accesibilidad."
       ]
     },
     {
@@ -55,10 +50,9 @@
       "startDate": "2023-08-12",
       "endDate": "2023-12-01",
       "highlights": [
-        "Gestioné el ciclo de vida completo (SDLC) bajo la metodología RUP para diseñar y desarrollar un ERP desde cero, centralizando la gestión de inventarios de múltiples bodegas a nivel nacional.",
-        "Digitalicé y automaticé el proceso de gestión de stock, sustituyendo cartas físicas y hojas de Excel por un sistema en tiempo real con SQL Server, reduciendo el tiempo de procesamiento de solicitudes en un 80%.",
-        "Desarrollé un módulo de reportes automatizados para auditorías trimestrales, permitiendo la generación de archivos PDF y Excel con un solo clic y eliminando errores humanos en el manejo de datos críticos.",
-        "Orquesté el diseño arquitectónico y despliegue del sistema utilizando Blazor y C#, garantizando la integridad del 100% de los datos durante la migración de registros manuales a una base de datos escalable."
+        "Diseñé la arquitectura y ejecuté el despliegue de un ERP en Blazor y .NET para centralizar la gestión de inventarios de múltiples bodegas a nivel nacional.",
+        "Digitalicé y automaticé la gestión de stock, sustituyendo cartas físicas y hojas de Excel por un sistema en tiempo real con SQL Server, reduciendo el tiempo de procesamiento de solicitudes en un 80%.",
+        "Construí desde Blazor un módulo de reportes automatizados para auditorías trimestrales, con exportación a PDF y Excel en un clic."
       ]
     }
   ],
@@ -311,7 +305,6 @@
     "Scrum",
     "IA Generativa",
     "Agentes de IA",
-    "n8n",
     "OpenCode",
     "Claude Code",
     "Español (Nativo)",
