@@ -11,7 +11,7 @@ const { educations } = useResume(currentLocale);
 ---
 
 <Section title={t('education.title')}>
-  {educations.map(({ institution, area, startDate, endDate }) => (
+  {educations.map(({ institution, area, url, startDate, endDate }) => (
     <article>
       <header>
         <header class="flex justify-between gap-2">
@@ -23,7 +23,7 @@ const { educations } = useResume(currentLocale);
       </header>
       <div class="flex gap-2 items-center justify-between">
         <p>{area}</p>
-        <Link class="print:flex hidden" href={''} target="_blank" rel="noopener noreferrer">
+        <Link class="print:flex hidden" href={url} target="_blank" rel="noopener noreferrer">
           <ExternalIcon width={12} height={12} class="size-3 transition-[color] hover:text-neutral-900" />
         </Link>
       </div>
