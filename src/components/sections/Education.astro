@@ -7,11 +7,11 @@ import { getCurrentLocale, useResume, useTranslations } from '@i18n/utils';
 
 const currentLocale = getCurrentLocale(Astro.currentLocale);
 const t = useTranslations(currentLocale);
-const { education } = useResume(currentLocale);
+const { educations } = useResume(currentLocale);
 ---
 
 <Section title={t('education.title')}>
-  {education.map(({ institution, area, startDate, endDate }) => (
+  {educations.map(({ institution, area, startDate, endDate }) => (
     <article>
       <header>
         <header class="flex justify-between gap-2">

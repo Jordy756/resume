@@ -10,57 +10,62 @@
       "region": "Costa Rica"
     }
   },
-  "experience": [
+  "experiences": [
     {
-      "name": "Factor K",
-      "position": "Full Stack Developer for Grupo Monge",
+      "organization": "Factor K",
+      "role": "Full Stack Developer for Grupo Monge",
+      "location": "Remote",
       "startDate": "2026-05-05",
       "endDate": null,
       "highlights": [
-        "Developed the commission recognition and deferral engine in .NET, with amortization schedules and configurable parameters for refinancing, early payments, portfolio sales, and bad debt.",
-        "Implemented digital payment reconciliation in .NET, automating the matching of bank references, customer data, and accounting records across multiple currencies.",
-        "Delivered transport guide management in Blazor and .NET 10, covering ticket validation, barcode scanning, status tracking, and exception reports.",
-        "Designed and implemented the monthly ETL load processes for the financial Data Warehouse in SQL Server, with historical data and automated refreshes feeding margin, recovery, and placement analysis."
+        "Implement digital payment reconciliation in .NET, using SQL Server to match bank references, customer data, and accounting records for thousands of payments across 2 currencies (CRC and USD), automating the manual compensation.",
+        "Developed the commission recognition and deferral engine in .NET, using SQL Server for storage and amortization schedules with configurable parameters for refinancing, early payments, portfolio sales, and bad debt.",
+        "Built the transport guide management system in Blazor and .NET 10, with ticket validation, barcode scanning, status control, and inconsistency reports, improving productivity by 20%.",
+        "Designed and implemented the monthly ETL load processes for the Data Warehouse in SQL Server, loading millions of records, centralizing the data in one table per process and indexing the queries to eliminate wait times."
       ]
     },
     {
-      "name": "4Geeks",
-      "position": "Full Stack Developer",
+      "organization": "4Geeks",
+      "role": "Full Stack Developer",
+      "location": "Remote",
       "startDate": "2025-07-01",
       "endDate": "2025-12-01",
       "highlights": [
-        "Launched the company's first mobile application from scratch in Flutter, migrating existing web services into a cross-platform mobile experience.",
+        "Built the company's first mobile application from scratch in Flutter, migrating existing web services to a cross-platform mobile experience and keeping those services reachable from mobile.",
         "Redesigned MARKET-APP in Electron and React, turning an early prototype into a production-ready self-service tool with i18n support.",
-        "Implemented real-time messaging with Angular and Firebase, adding instant notifications and chat management between candidates and recruiters.",
-        "Refactored Python backend middlewares to integrate API Key authentication, enabling concurrent validation of OAuth and JWT tokens."
+        "Implemented a real-time messaging system with Angular and Firebase, with instant notifications and chat management between candidates and recruiters, removing email-based coordination.",
+        "Refactored Python backend middlewares to integrate API Key authentication, enabling concurrent validation of OAuth and JWT tokens across roughly 25 endpoints."
       ]
     },
     {
-      "name": "Lácteos El Torito",
-      "position": "Freelancer Web Developer",
+      "organization": "Lácteos El Torito",
+      "role": "Freelancer Web Developer",
+      "location": "Remote",
       "startDate": "2024-01-16",
       "endDate": "2024-03-01",
       "highlights": [
-        "Created the company's first website with Astro, Tailwind CSS, and Figma, scoring 95+ on Google Lighthouse for performance, SEO, and accessibility."
+        "Created the company's first website with Astro, Tailwind CSS, and Figma, achieving 95+ on all three Google Lighthouse scores: performance, SEO, and accessibility."
       ]
     },
     {
-      "name": "INTA Costa Rica",
-      "position": "Full Stack Developer",
+      "organization": "INTA Costa Rica",
+      "role": "Full Stack Developer",
+      "location": "Remote",
       "startDate": "2023-08-12",
       "endDate": "2023-12-01",
       "highlights": [
-        "Designed the architecture and deployment of an ERP in Blazor and .NET to centralize inventory management across multiple warehouses nationwide.",
+        "Designed and implemented an ERP in Blazor and .NET to centralize inventory management across multiple warehouses nationwide, also executing its deployment.",
         "Digitized and automated stock management, replacing physical forms and Excel sheets with a real-time SQL Server system that cut request processing time by 80%.",
-        "Automated quarterly audit reporting in Blazor, generating PDF and Excel files in one click."
+        "Built an automated reporting module in Blazor for quarterly audits, eliminating manual consolidation and enabling PDF and Excel export in one click."
       ]
     }
   ],
-  "education": [
+  "educations": [
     {
       "institution": "Universidad de Costa Rica",
       "area": "Bachelor's Degree in Business Computing",
-      "startDate": "2020-03-10",
+      "location": "Turrialba, CR",
+      "startDate": "2020-03-01",
       "endDate": "2026-02-01"
     }
   ],

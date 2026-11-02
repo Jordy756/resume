@@ -21,7 +21,7 @@ const formattedEndDate = endDate
   : t('labels.present');
 ---
 
-<div class:list={['text-center justify-end items-center text-neutral-500 gap-0.5 flex capitalize', className]}>
+<div class:list={['text-center justify-end items-start text-neutral-500 gap-0.5 flex capitalize', className]}>
   <time datetime={startDate}>{formattedStartDate}</time>
   <span>-</span>
   {endDate ? <time datetime={endDate}>{formattedEndDate}</time> : <span>{formattedEndDate}</span>}
